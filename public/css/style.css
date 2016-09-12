@@ -1,0 +1,13 @@
+body {
+  padding-top: 70px
+}
+
+    
+p.button {
+    font-size : 20px
+}
+
+.power { 
+    background : red;
+    height: 100px;
+}

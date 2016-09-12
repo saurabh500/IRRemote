@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+  
+    div.btn-group.btn-group-justified(role="group")
+      div(class="btn-group" role="group")
+        button(type="button" class="btn btn-default power" data-button="KEY_POWER")
+          p.glyphicon.glyphicon-off.button Power
+          
+    div.btn-group.btn-group-justified(role="group")
+      div(class="btn-group" role="group")
+        button(type="button" class="btn btn-default" data-button="KEY_VOLUMEUP") 
+          p.glyphicon.glyphicon-volume-up.button Volume Up
+
+    div.btn-group.btn-group-justified(role="group")
+      div(class="btn-group" role="group")
+        button(type="button" class="btn btn-default" data-button="KEY_VOLUMEDOWN") 
+          p.glyphicon.glyphicon-volume-down.button Volume Down
+          
+    div.btn-group.btn-group-justified(role="group")
+      div(class="btn-group" role="group")
+        button(type="button" class="btn btn-default" data-button="KEY_MUTE")
+          p.glyphicon.glyphicon-volume-off.button Mute
